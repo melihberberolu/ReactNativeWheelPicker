@@ -1,6 +1,6 @@
 {
-  "name": "react-native-wheel-picker-android",
-  "version": "3.0.0",
+  "name": "@victorzimnikov/react-native-wheel-picker-android",
+  "version": "3.1.1",
   "description": "Simple Wheel Picker for Android to use with react-native",
   "main": "index.tsx",
   "repository": {
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/kalontech/ReactNativeWheelPicker",
   "dependencies": {
-    "@react-native-community/picker": "^1.8.0",
+    "@react-native-picker/picker": "^2.2.1",
     "moment": "^2.24.0"
   }
 }
