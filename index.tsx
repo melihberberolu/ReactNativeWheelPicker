@@ -9,9 +9,9 @@ import { Picker, PickerIOS } from "@react-native-picker/picker";
 
 import { StyleProp, TextStyle } from "react-native";
 
-type ItemValue = number | string;
+export type ItemValue = number | string;
 
-interface PickerItemProps<T = ItemValue> {
+export interface PickerItemProps<T = ItemValue> {
   label?: string;
   value?: T;
   color?: string;
@@ -37,4 +37,4 @@ interface PickerItemProps<T = ItemValue> {
   enabled?: boolean;
 }
 
-export { WheelPicker, TimePicker, DatePicker, Picker, PickerIOS, PickerItemProps, ItemValue }
+export { WheelPicker, TimePicker, DatePicker, Picker, PickerIOS }
