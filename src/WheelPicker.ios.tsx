@@ -4,7 +4,7 @@ import { Picker } from "@react-native-picker/picker";
 
 interface Props {
   data: Array<string>;
-  selectedItem?: number;
+  selectedItem: number;
   onItemSelected?: Function;
   disabled?: boolean;
 }
