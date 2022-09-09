@@ -10,17 +10,16 @@ interface Props {
 }
 
 const WheelPicker: React.FC<Props> = props => {
-  const [selectedItem, setSelectedItem] = useState(props.selectedItem || 0);
   const { data, onItemSelected, disabled } = props;
   if (!data || data.length === 0) return null;
+ 
   return (
     <View pointerEvents={disabled ? "none" : "auto"}>
       <Picker
         {...props}
-        selectedValue={data[selectedItem]}
+        selectedValue={data[props.selectedItem]}
         onValueChange={(value, index): void => {
           if (onItemSelected) onItemSelected(index);
-          setSelectedItem(index);
         }}
       >
         {data.map((i, index) => (
